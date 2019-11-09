@@ -1,0 +1,347 @@
+/*** FONTS ***********************************************/
+
+@font-face {
+	font-family: 'Caveat';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/caveat-javier-valencia.woff2') format('woff2'),
+		url('../fonts/caveat-javier-valencia.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url('../fonts/roboto-v20-latin-300.woff2') format('woff2'),
+		url('../fonts/roboto-v20-latin-300.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 300;
+	font-display: swap;
+	src: url('../fonts/roboto-v20-latin-300italic.woff2') format('woff2'),
+		url('../fonts/roboto-v20-latin-300italic.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url('../fonts/roboto-v20-latin-500.woff2') format('woff2'),
+		url('../fonts/roboto-v20-latin-500.woff') format('woff');
+}
+
+
+
+/*** HTML ************************************************/
+
+html {
+	font-size: 16px;
+	font-family: "Roboto", "sans serif";
+	font-weight: 300;
+	text-rendering: geometricPrecision;
+}
+
+
+
+/*** BODY *************************************************/
+
+body {
+	min-width: 360px;
+	padding: 0 30px;
+	margin-bottom: 40px;
+}
+
+
+
+/*** HEADER **********************************************/
+
+header {
+	margin-top: 40px;
+	text-align: center;
+}
+
+header h1 {
+	font-family: "Caveat";
+	font-size: 3rem;
+	font-weight: normal;
+}
+
+
+
+/*** NAV *************************************************/
+
+nav {
+	margin-top: 40px;
+}
+
+nav a {
+	display: block;
+	text-align: center;
+	font-size: 0.85rem;
+	line-height: 4;
+	text-decoration: none;
+	color: rgb(170, 170, 170);
+	border-color: rgb(200, 200, 200);
+	border-width: 1px 1px 0px 1px;
+	border-style: solid;
+}
+
+nav li:first-child a {
+	border-radius: 10px 10px 0 0;
+}
+
+nav li:last-child a {
+	border-radius: 0 0 10px 10px;
+	border-bottom-width: 1px;
+}
+
+nav a:hover {
+	color: #222;
+}
+
+nav .selected a {
+	font-weight: 500;
+	background-color: rgb(240, 240, 240);
+	color: #222;
+}
+
+
+
+/*** ARTICLE *********************************************/
+
+article {
+	margin-top: 40px;
+	hyphens: auto;
+}
+
+article > * {
+	margin-top: 20px;
+}
+
+article > *:first-child {
+	margin-top: 0;
+}
+
+article p {
+	line-height: 1.5;
+}
+
+article ul {
+	padding-left: 30px;
+}
+
+article li {
+	list-style: disc;
+	line-height: 2;
+}
+
+article img {
+	max-width: 100%;
+	display: block;
+}
+
+article strong {
+	font-weight: 500;
+}
+
+article em {
+	font-style: italic;
+	color: rgb(29, 98, 189);
+}
+
+.courses span {
+	color: rgb(202, 14, 14);
+	font-size: 0.8rem;
+	margin-left: 5px;
+}
+
+
+
+/*** SECTION *********************************************/
+
+section {
+	margin-top: 40px;
+	padding-left: 20px;
+}
+
+section > * {
+	margin-top: 20px;
+}
+
+section > *:first-child {
+	margin-top: 0;
+}
+
+section h2 {
+	font-weight: 500;
+	font-size: 1.1rem;
+	margin-left: -20px;
+}
+
+
+
+/*** KNOWLEDGE *******************************************/
+
+.knowledge .col {
+	margin-top: 30px;
+}
+
+.knowledge .col:first-child {
+	margin-top: 0;
+}
+
+.knowledge figure {
+	background-color: rgb(245, 245, 245);
+	border: 1px solid rgb(189, 189, 189);
+	padding: 20px;
+	border-radius: 10px;
+	height: 100%;
+}
+
+.knowledge p {
+	margin-top: 20px;
+	line-height: 2.2;
+	font-size: 0.95rem;
+	word-spacing: 5px;
+}
+
+.knowledge mark {
+	background-color: rgb(182, 224, 153);
+	border: 1px solid rgb(130, 161, 111);
+	box-shadow: 1px 1px 1px grey;
+	padding: 2px 6px;
+	border-radius: 5px;
+	white-space: nowrap;
+}
+
+.knowledge figcaption {
+	font-weight: 500;
+}
+
+
+
+/*** GALLERY *********************************************/
+
+.gallery {
+	justify-content: center;
+}
+
+.gallery .col {
+	margin-top: 40px;
+}
+
+.gallery .col:first-child {
+	margin-top: 0;
+}
+
+.gallery img {
+	border-radius: 10px;
+	box-shadow: 2px 2px 1px grey;
+}
+
+.gallery figcaption {
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+
+/*** CONTACT *********************************************/
+
+.contact {
+	text-align: center;
+	margin-top: 80px;
+}
+
+.email {
+	display: inline-block;
+	color: #222;
+}
+
+.email:hover {
+	fill: rgb(0, 100, 200);
+	color: rgb(0, 100, 200);
+	text-decoration: underline;
+}
+
+.email svg {
+	width: 200px;
+	filter: drop-shadow(2px 2px 1px grey);
+}
+
+.email figcaption {
+	margin-top: 20px;
+}
+
+.email a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+
+/*** MEDIA QUERIES ***************************************/
+
+@media (min-width: 500px) {
+	.gallery {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	
+	.gallery .col {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.gallery .col:nth-child(-n+2) {
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 700px) {
+	body {
+		max-width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	nav ul {
+		justify-content: space-evenly;
+		border-bottom: 1px solid #222;
+		padding-bottom: 10px;
+	}
+	
+	nav a {
+		display: inline;
+		line-height: unset;
+		border: unset;
+	}
+	
+	nav .selected a {
+		background: unset;
+	}
+	
+	.knowledge {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	
+	.knowledge .col {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.knowledge .col:nth-child(-n+2) {
+		margin-top: 0;
+	}
+	
+	.gallery .col:nth-child(-n+3) {
+		margin-top: 0;
+	}
+}
