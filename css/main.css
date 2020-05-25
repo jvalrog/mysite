@@ -161,6 +161,16 @@ article em {
 	margin-left: 5px;
 }
 
+article a {
+	color: rgb(0, 100, 200);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+article a:hover {
+	text-decoration: underline;
+}
+
 
 
 /*** SECTION *********************************************/
